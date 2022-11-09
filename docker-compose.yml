@@ -13,9 +13,6 @@ services:
   nestjs: 
     env_file: "./.env"
     restart: always
-    build: 
-      context: ./
-      dockerfile: ./Dockerfile
     image: namhoang1604/nestjs-assignment:0.1-2022.11.08
     depends_on:
       - postgis14
